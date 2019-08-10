@@ -40,7 +40,7 @@ For code sandbox users, please refer to `CODESANDBOX.md`
 ### Start a dev server
 
 ```bash
-npm run start
+npm start
 ```
 
 ### Build dist

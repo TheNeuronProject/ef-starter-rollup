@@ -8,7 +8,8 @@ const { input, name, format, plugins, devPath, bundle } = base
 plugins.push(liveServer({
 	root: './dev',
 	open: true,
-	file: 'index.html'
+	file: 'index.html',
+	ignore: '**/*.map'
 }))
 
 console.log(format)
