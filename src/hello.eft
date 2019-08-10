@@ -1,0 +1,18 @@
+>center
+	>img.logo
+		#src = /assets/logo.png
+		#alt = logo
+	>h1.title
+		.ef.js
+		>span.version
+			.v{{version}}
+	>p.desc
+		.Project template for ef.js. Please refer to &
+		>a
+			#href = https://ef.js.org
+			#target = _blank
+			#rel = noopener noreferrer
+			.ef.js.org
+		. for full documentation.
+	>div.copyright
+		.Copyright &u00a9 {{year}} Yukino Song
