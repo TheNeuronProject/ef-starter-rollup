@@ -1,9 +1,11 @@
+// Import plugins
+import copy from 'rollup-plugin-copy-glob'
 // Import base config
 import base from './rollup.base'
 // Import dev plugins
 import liveServer from 'rollup-plugin-live-server'
 
-const { input, name, format, plugins, devPath, bundle } = base
+const { input, name, format, copyOptions, plugins, devPath, bundle } = base
 
 plugins.push(liveServer({
 	root: './dev',
@@ -22,7 +24,10 @@ const config = {
 		file: `${devPath}/${bundle}.js`,
 		sourcemap: true,
 	},
-	plugins,
+	plugins: [
+		copy(...copyOptions, {verbose: true, watch: true}),
+		...plugins
+	],
 	watch: {
 		chokidar: true,
 		include: ['src/**']

@@ -3,7 +3,6 @@ import path from 'path'
 import chalk from 'chalk'
 
 // Rollup plugins
-import copy from 'rollup-plugin-copy-glob'
 import buble from 'rollup-plugin-buble'
 import resolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
@@ -45,11 +44,11 @@ export default {
 	input,
 	name,
 	format,
+	copyOptions,
 	bundle: path.normalize(bundle),
 	devPath: path.normalize(devPath),
 	proPath: path.normalize(proPath),
 	plugins: [
-		copy(...copyOptions),
 		progress({
 			clearLine: false
 		}),
