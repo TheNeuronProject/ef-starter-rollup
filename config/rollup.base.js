@@ -11,7 +11,7 @@ import progress from 'rollup-plugin-progress'
 import json from 'rollup-plugin-json'
 import eft from 'rollup-plugin-eft'
 import postcss from 'rollup-plugin-postcss'
-import inject from 'rollup-plugin-inject'
+import inject from '@rollup/plugin-inject'
 import {eslint} from 'rollup-plugin-eslint'
 import {uglify} from 'rollup-plugin-uglify'
 

@@ -19,7 +19,7 @@ export default {
 	copyOptions: [
 		[
 			{files: 'src/index.html', dest: getOutputPath('')},
-			{files: 'src/assets/*.*', dest: getOutputPath('assets')}
+			{files: 'src/assets/**.*', dest: getOutputPath('assets')}
 		]
 	]
 }
