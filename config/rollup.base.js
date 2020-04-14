@@ -3,12 +3,12 @@ import path from 'path'
 import chalk from 'chalk'
 
 // Rollup plugins
-import buble from 'rollup-plugin-buble'
-import resolve from 'rollup-plugin-node-resolve'
-import commonjs from 'rollup-plugin-commonjs'
-import replace from 'rollup-plugin-replace'
+import buble from '@rollup/plugin-buble'
+import resolve from '@rollup/plugin-node-resolve'
+import commonjs from '@rollup/plugin-commonjs'
+import replace from '@rollup/plugin-replace'
 import progress from 'rollup-plugin-progress'
-import json from 'rollup-plugin-json'
+import json from '@rollup/plugin-json'
 import eft from 'rollup-plugin-eft'
 import postcss from 'rollup-plugin-postcss'
 import inject from '@rollup/plugin-inject'
@@ -19,7 +19,7 @@ import {uglify} from 'rollup-plugin-uglify'
 // import postcssModules from 'postcss-modules'
 import simplevars from 'postcss-simple-vars'
 import nested from 'postcss-nested'
-import cssnext from 'postcss-cssnext'
+import postcssPresetEnv from 'postcss-preset-env'
 
 // ef configuration
 import efConfig from './ef.config.js'
@@ -66,7 +66,7 @@ export default {
 			plugins: [
 				simplevars(),
 				nested(),
-				cssnext({ warnForDuplicates: false })
+				postcssPresetEnv({ warnForDuplicates: false })
 			]
 		}),
 		buble({
