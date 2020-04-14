@@ -21,5 +21,7 @@ export default {
 			{files: 'src/index.html', dest: getOutputPath('')},
 			{files: 'src/assets/**.*', dest: getOutputPath('assets')}
 		]
-	]
+	],
+	external: [],
+	golbals: {}
 }

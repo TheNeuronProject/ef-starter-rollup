@@ -32,6 +32,8 @@ const {
 	devPath,
 	proPath,
 	copyOptions,
+	external,
+	golbals
 } = efConfig
 
 console.log('Target:', chalk.bold.green(process.env.NODE_ENV || 'development'))
@@ -45,6 +47,7 @@ export default {
 	name,
 	format,
 	copyOptions,
+	external,
 	bundle: path.normalize(bundle),
 	devPath: path.normalize(devPath),
 	proPath: path.normalize(proPath),

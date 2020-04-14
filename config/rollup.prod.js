@@ -3,20 +3,22 @@ import copy from 'rollup-plugin-copy-glob'
 // Import base config
 import base from './rollup.base'
 
-const {input, name, format, copyOptions, plugins, proPath, bundle} = base
+const {input, name, format, copyOptions, plugins, proPath, bundle, external, globals} = base
 
 const config = {
 	input,
 	output: {
 		name,
 		format,
+		external,
 		file: `${proPath}/${bundle}.js`,
-		sourcemap: false
+		sourcemap: false,
+		globals
 	},
 	plugins: [
 		copy(...copyOptions, {verbose: true}),
 		...plugins
-	],
+	]
 }
 
 export default config
