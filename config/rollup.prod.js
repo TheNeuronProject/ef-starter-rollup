@@ -7,10 +7,10 @@ const {input, name, format, copyOptions, plugins, proPath, bundle, external, glo
 
 const config = {
 	input,
+	external,
 	output: {
 		name,
 		format,
-		external,
 		file: `${proPath}/${bundle}.js`,
 		sourcemap: false,
 		globals
