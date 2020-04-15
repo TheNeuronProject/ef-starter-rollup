@@ -48,6 +48,7 @@ export default {
 	format,
 	copyOptions,
 	external,
+	golbals,
 	bundle: path.normalize(bundle),
 	devPath: path.normalize(devPath),
 	proPath: path.normalize(proPath),
