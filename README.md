@@ -4,13 +4,13 @@ This is a starter template for ef.js projects, bundling using [Rollup](https://r
 
 ## Usage
 
-For code sandbox users, please refer to `CODESANDBOX.md`
-
 1. Download this project
 2. Unzip
 3. Change fields you want in `package.json`
 4. Change options you would like to customize in `config` folder
 5. Start coding!
+
+For CodeSandbox users, just start editing by forking this [template](https://codesandbox.io/s/github/TheNeuronProject/ef-starter-template).
 
 ## Presets
 
