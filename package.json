@@ -1,6 +1,6 @@
 {
   "name": "ef-starter-template",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "ef.js project starter template",
   "repository": "https://github.com/TheNeuronProject/ef-starter-template",
   "main": "src/main.js",
