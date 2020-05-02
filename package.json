@@ -1,6 +1,6 @@
 {
   "name": "ef-starter-template",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "ef.js project starter template",
   "repository": "https://github.com/TheNeuronProject/ef-starter-template",
   "main": "src/main.js",
@@ -34,7 +34,7 @@
     "postcss-nested": "^4.2.1",
     "postcss-preset-env": "^6.7.0",
     "postcss-simple-vars": "^5.0.2",
-    "rollup": "^2.7.3",
+    "rollup": "^2.7.6",
     "rollup-plugin-copy-glob": "^0.3.1",
     "rollup-plugin-eft": "^0.10.6",
     "rollup-plugin-eslint": "^7.0.0",
@@ -44,6 +44,6 @@
     "rollup-plugin-uglify": "^6.0.4"
   },
   "dependencies": {
-    "ef-core": "^0.10.7"
+    "ef-core": "^0.10.8"
   }
 }
