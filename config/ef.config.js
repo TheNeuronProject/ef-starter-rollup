@@ -23,5 +23,5 @@ export default {
 		]
 	],
 	external: [],
-	golbals: {}
+	globals: {}
 }

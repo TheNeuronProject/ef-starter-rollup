@@ -14,8 +14,6 @@ plugins.push(liveServer({
 	ignore: '**/*.map'
 }))
 
-console.log(format)
-
 const config = {
 	input,
 	external,
