@@ -16,7 +16,6 @@ import {eslint} from 'rollup-plugin-eslint'
 import {uglify} from 'rollup-plugin-uglify'
 
 // Postcss plugins
-// import postcssModules from 'postcss-modules'
 import simplevars from 'postcss-simple-vars'
 import nested from 'postcss-nested'
 import postcssPresetEnv from 'postcss-preset-env'

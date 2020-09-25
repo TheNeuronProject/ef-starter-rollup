@@ -1,0 +1,10 @@
+>center
+	>img.logo
+		#src = /assets/logo.png
+		#alt = logo
+	>Hello
+		%version = {{version}}
+	>p.links
+		.Links:
+		+links
+	-footer

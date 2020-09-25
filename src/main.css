@@ -2,6 +2,8 @@
 
 html {
 	font-family: 'Blinker', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -28,7 +30,12 @@ a {
 }
 
 .desc {
+	color: #333;
+}
+
+.links {
 	color: #444;
+	font-size: 80%;
 }
 
 .copyright {
