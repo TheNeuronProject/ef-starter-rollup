@@ -17,7 +17,7 @@ inform()
 
 // Create an instance for template `Hello`
 const app = new App({
-	footer: new Copyright(),
+	footer: new Copyright((new Date()).getFullYear(), 'Yukino Song'),
 	$data: {
 		version
 	}

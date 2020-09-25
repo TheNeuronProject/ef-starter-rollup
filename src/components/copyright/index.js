@@ -1,10 +1,11 @@
 import Tpl from './template.eft'
 
 export default class Copyright extends Tpl {
-	constructor() {
+	constructor(year, author) {
 		super({
 			$data: {
-				year: (new Date()).getFullYear()
+				year,
+				author
 			}
 		})
 	}
