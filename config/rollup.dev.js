@@ -2,18 +2,14 @@
 import copy from 'rollup-plugin-copy-glob'
 // Import base config
 import base from './rollup.base'
+// Import browsersync config
+import bsConfig from './bs-config'
 // Import dev plugins
-import {liveServer} from 'rollup-plugin-live-server'
+import browsersync from 'rollup-plugin-browsersync'
 
 const { input, name, format, copyOptions, plugins, devPath, bundle, external, globals } = base
 
-plugins.push(liveServer({
-	// wait: 100,
-	root: './dev',
-	open: true,
-	file: 'index.html',
-	ignore: '**/*.map'
-}))
+plugins.push(browsersync(bsConfig))
 
 const config = {
 	input,

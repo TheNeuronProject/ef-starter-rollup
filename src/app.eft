@@ -2,9 +2,10 @@
 	>img.logo
 		#src = /assets/logo.png
 		#alt = logo
-	>Hello
-		%version = {{version}}
+	-hello
 	>p.links
 		.Links:
 		+links
-	-footer
+	>Copyright
+		%author = {{author}}
+		%year = {{year}}
