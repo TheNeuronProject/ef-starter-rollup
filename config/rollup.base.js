@@ -13,7 +13,7 @@ import eft from 'rollup-plugin-eft'
 import postcss from 'rollup-plugin-postcss'
 import inject from '@rollup/plugin-inject'
 import {eslint} from 'rollup-plugin-eslint'
-import {uglify} from 'rollup-plugin-uglify'
+import {terser} from 'rollup-plugin-terser'
 
 // Postcss plugins
 import simplevars from 'postcss-simple-vars'
@@ -92,6 +92,6 @@ export default {
 		replace({
 			'process.env.NODE_ENV': `'${process.env.NODE_ENV}'`
 		}),
-		(process.env.NODE_ENV === 'production' && uglify())
+		(process.env.NODE_ENV === 'production' && terser())
 	]
 }
