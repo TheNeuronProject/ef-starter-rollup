@@ -55,9 +55,9 @@ npm run build
 npm run lint
 ```
 
-### Clear build files
+### Clean build files
 ```bash
-npm run clear
+npm run clean
 ```
 
 ## License
