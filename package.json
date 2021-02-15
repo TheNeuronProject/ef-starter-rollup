@@ -1,6 +1,6 @@
 {
   "name": "ef-starter-template",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "ef.js project starter template",
   "repository": "https://github.com/TheNeuronProject/ef-starter-template",
   "main": "src/main.js",
@@ -30,6 +30,7 @@
     "eft-parser": "^0.13.3",
     "eslint": "^7.20.0",
     "eslint-plugin-react": "^7.22.0",
+    "postcss": "^8.2.6",
     "postcss-nested": "5",
     "postcss-preset-env": "^6.7.0",
     "postcss-simple-vars": "6",
