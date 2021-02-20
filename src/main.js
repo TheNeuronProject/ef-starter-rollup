@@ -17,11 +17,7 @@ inform()
 
 // Create an instance for template `Hello`
 const app = new App({
-	hello: new Hello(version),
-	$data: {
-		year: (new Date()).getFullYear(),
-		author: 'Yukino Song'
-	}
+	hello: new Hello(version)
 }, scope)
 
 // Add links

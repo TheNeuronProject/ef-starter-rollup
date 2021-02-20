@@ -1,5 +1,5 @@
 >h1.title
-	.ef.js
+	.{{name}} + ef.js
 	>span.version
 		.v{{version}}
 >p.desc
