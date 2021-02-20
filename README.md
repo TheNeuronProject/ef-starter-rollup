@@ -7,16 +7,16 @@ This is a starter template for {{name}}, bundling using [Rollup](https://rollupj
 ### Use create-ef-app
 
 ```bash
-npm init ef-app [project name] --template <template>
+npm init ef-app [project name] --template rollup
 ```
 
 ### Manually
 
 1. Download this project
-2. Unzip
-3. Change fields you want in `package.json`
-4. Change options you would like to customize in `config` folder
-5. Start coding!
+1. Unzip
+1. Change fields you want in `package.json`
+1. Change options you would like to customize in `config` folder
+1. Start coding!
 
 ### CodeSandbox
 
