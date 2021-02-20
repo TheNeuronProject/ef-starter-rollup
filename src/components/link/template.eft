@@ -1,7 +1,7 @@
 . [ &
 >a
-	#href = {{href}}
+	#href = \{{href}}
 	#target = _blank
 	#rel = noopener noreferrer
-	.{{text}}
+	.\{{text}}
 . ]

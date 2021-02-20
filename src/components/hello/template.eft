@@ -1,6 +1,6 @@
 >h1.title
 	.{{name}} + ef.js
 	>span.version
-		.v{{version}}
+		.v\{{version}}
 >p.desc
 	.Welcome to the wonderland of ef.js!

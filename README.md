@@ -20,7 +20,7 @@ npm init ef-app [project name] --template rollup
 
 ### CodeSandbox
 
-Fork this [template](https://codesandbox.io/s/github/TheNeuronProject/ef-starter-rollup).
+After initlization, you can push the project to CodeSandbox using [CodeSandboxCli](https://codesandbox.io/docs/api#import-local-projects-via-cli)
 
 ## Preset
 
