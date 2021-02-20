@@ -7,7 +7,7 @@ This is a starter template for {{name}}, bundling using [Rollup](https://rollupj
 ### Use create-ef-app
 
 ```bash
-npm init ef-app [project name] --template rollup
+npm init ef-app <project name> -- --template rollup
 ```
 
 ### Manually
