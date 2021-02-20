@@ -1,8 +1,16 @@
-# Welcome
+# {{capital name space=true}}
 
-This is a starter template for ef.js projects, bundling using [Rollup](https://rollupjs.org).
+This is a starter template for {{name}}, bundling using [Rollup](https://rollupjs.org).
 
 ## Usage
+
+### Use create-ef-app
+
+```bash
+npm init ef-app [project name] --template <template>
+```
+
+### Manually
 
 1. Download this project
 2. Unzip
@@ -10,9 +18,11 @@ This is a starter template for ef.js projects, bundling using [Rollup](https://r
 4. Change options you would like to customize in `config` folder
 5. Start coding!
 
-For CodeSandbox users, just start editing by forking this [template](https://codesandbox.io/s/github/TheNeuronProject/ef-starter-template).
+### CodeSandbox
 
-## Presets
+Fork this [template](https://codesandbox.io/s/github/TheNeuronProject/ef-starter-rollup).
+
+## Preset
 
 ### Code style
 
@@ -20,7 +30,7 @@ For CodeSandbox users, just start editing by forking this [template](https://cod
 - Single quotes
 - No semicolons
 
-*Change in `.editorconfig`*
+*Modify to fit your own in `.editorconfig`*
 
 ### Transpiler
 

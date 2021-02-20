@@ -1,7 +1,7 @@
 {
-  "name": "ef-starter-template",
-  "version": "1.2.3",
-  "description": "ef.js project starter template",
+  "name": "{{name}}",
+  "version": "0.0.0",
+  "description": "{{description}}",
   "repository": "https://github.com/TheNeuronProject/ef-starter-template",
   "main": "src/main.js",
   "scripts": {
@@ -10,8 +10,8 @@
     "lint": "eslint --ext .js --ext .jsx src",
     "clean": "del ./dist/** ./dev/**"
   },
-  "author": "ClassicOldSong",
-  "license": "MIT",
+  "author": "{{contact}}",
+  "license": "{{license}}",
   "devDependencies": {
     "@rollup/plugin-buble": "^0.21.3",
     "@rollup/plugin-commonjs": "^17.1.0",
