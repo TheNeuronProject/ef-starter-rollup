@@ -90,7 +90,10 @@ export default {
 		}),
 		commonjs(),
 		replace({
-			'process.env.NODE_ENV': `'${process.env.NODE_ENV}'`
+			preventAssignment: true,
+			values: {
+				'process.env.NODE_ENV': `'${process.env.NODE_ENV}'`
+			}
 		}),
 		(process.env.NODE_ENV === 'production' && terser())
 	]
