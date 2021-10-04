@@ -1,0 +1,9 @@
+>span
+	@click.stop
+	>button
+		@click = decrement
+		.-
+	. \{{value = 0}} &
+	>button
+		@click = increment
+		.+

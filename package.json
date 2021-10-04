@@ -43,6 +43,6 @@
     "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {
-    "ef-core": "^0.14.1"
+    "ef-core": "^0.14.2"
   }
 }

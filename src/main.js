@@ -6,11 +6,12 @@ import App from './app.eft'
 import Hello from './components/hello'
 import Copyright from './components/copyright'
 import Link from './components/link'
+import SpinBox from './components/spinbox'
 // Import helper function and version info from `ef-core`
 import {inform, exec, version} from 'ef-core'
 
 // Prepare a custom component scope for later use
-const scope = {Copyright}
+const scope = {Copyright, SpinBox}
 
 // Pause rendering
 inform()

@@ -13,11 +13,11 @@ a {
 .logo {
 	height: 420px;
 	width: 420px;
-	filter: drop-shadow(0px 3px 10px #BBB);
+	filter: drop-shadow(0px 3px 10px #bbb);
 }
 
 .title {
-	text-shadow: 0px 2px 3px #BBB;
+	text-shadow: 0px 2px 3px #bbb;
 	position: relative;
 }
 
@@ -31,6 +31,11 @@ a {
 
 .desc {
 	color: #333;
+}
+
+.counter {
+	color: #444;
+	font-size: 90%;
 }
 
 .links {
