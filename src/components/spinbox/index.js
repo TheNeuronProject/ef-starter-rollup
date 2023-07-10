@@ -2,23 +2,33 @@ import Tpl from './template.eft'
 import { inform, exec } from 'ef-core'
 
 export default class SpinBox extends Tpl {
-	constructor(value = 0, step = 1) {
-		inform()
-		super()
+	static init(state, $data, watch) {
+		let step = 1
 
-		this.$data.value = value
-		this.$data.step = step
+		watch('step', ({value}) => {
+			step = parseInt(value, 10)
+		})
 
-		this.$methods = {
-			increment({ state }) {
-				state.$data.value += parseInt(state.$data.step, 10)
-				state.$emit('change')
-			},
-			decrement({ state }) {
-				state.$data.value -= parseInt(state.$data.step, 10)
-				state.$emit('change')
-			},
+		return {
+			methods: {
+				increment() {
+					$data.value += step
+					state.$emit('change')
+				},
+				decrement() {
+					$data.value -= step
+					state.$emit('change')
+				}
+			}
 		}
-		exec()
+	}
+
+	constructor(value = 0, step = 1) {
+		super({
+			$data: {
+				value,
+				step
+			}
+		})
 	}
 }
