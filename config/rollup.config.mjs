@@ -13,7 +13,7 @@ import copy from 'rollup-plugin-copy-glob'
 import browsersync from 'rollup-plugin-browsersync'
 
 // browsersync config
-import bsConfig from './bs-config'
+import bsConfig from './bs-config.mjs'
 
 // build configuration
 import userConfig from './build.config.mjs'
@@ -62,6 +62,7 @@ export default {
 			exclude: ['src/static/**.*', '../../../**/**.*', '**/*.efml']
 		}),
 		esbuild({
+			exclude: [],
 			target: target || 'es2015',
 			sourceMap: !isProduction,
 			minify: isProduction,
@@ -77,7 +78,7 @@ export default {
 		commonjs(),
 		...plugins,
 		execute(execCommands),
-		isProduction && browsersync(bsConfig)
+		!isProduction && browsersync(bsConfig)
 	],
 	watch: !isProduction && {
 		include: ['src/**/*.*']
