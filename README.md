@@ -7,7 +7,7 @@ This is a starter template for {{name}}, bundling using [Rollup](https://rollupj
 ### Use create-ef-app
 
 ```bash
-npm init ef-app <project name> -- --template rollup
+pnpm create ef-app <project name> -- --template rollup
 ```
 
 ### Manually
@@ -17,10 +17,6 @@ npm init ef-app <project name> -- --template rollup
 1. Change fields you want in `package.json`
 1. Change options you would like to customize in `config` folder
 1. Start coding!
-
-### CodeSandbox
-
-After initlization, you can push the project to CodeSandbox using [CodeSandboxCli](https://codesandbox.io/docs/api#import-local-projects-via-cli)
 
 ## Preset
 
@@ -34,7 +30,7 @@ After initlization, you can push the project to CodeSandbox using [CodeSandboxCl
 
 ### Transpiler
 
-[Bublé](https://buble.surge.sh)
+[esbuild](https://esbuild.github.io/)
 
 ### CSS pre-processer
 
