@@ -1,5 +1,4 @@
 import Tpl from './template.eft'
-import { inform, exec } from 'ef-core'
 
 export default class SpinBox extends Tpl {
 	static init(state, $data, watch) {

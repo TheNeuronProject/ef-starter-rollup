@@ -39,6 +39,6 @@
     "rollup-plugin-shell": "^1.0.9"
   },
   "dependencies": {
-    "ef-core": "^0.17.3"
+    "ef-core": "^0.17.4"
   }
 }

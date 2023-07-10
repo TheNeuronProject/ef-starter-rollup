@@ -1,3 +1,7 @@
+!import Copyright from './components/copyright'
+!import SpinBox from './components/spinbox'
+!scope { Copyright, SpinBox }
+
 >center
 	>img.logo
 		#src = /assets/logo.png
