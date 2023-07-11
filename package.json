@@ -11,6 +11,7 @@
   },
   "author": "{{contact}}",
   "license": "{{license}}",
+  "packageManager": "{{packageManager}}",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.2",
     "@rollup/plugin-eslint": "^9.0.4",
